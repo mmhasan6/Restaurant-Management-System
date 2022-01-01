@@ -24,6 +24,10 @@ Route::get('redirects', [HomeController::class, 'redirects']); //for multi Auth
     Route::get('update_food/{id}', [AdminController::class, 'showupdatepage']);
 		Route::put('update_food/{id}',[AdminController::class, 'update']);
     Route::get('delete_food/{id}', [AdminController::class, 'destroy']);
+  //Reservation
+    Route::post('reservation', [AdminController::class, 'reservation']); // Anyone can do a reservation
+    Route::get('show_reservation', [AdminController::class, 'show_reservation']);
+
 
 // ! End Admin Routes
 
