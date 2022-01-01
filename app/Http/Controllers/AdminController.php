@@ -114,7 +114,7 @@ class AdminController extends Controller
     }
 
 
-    // reservation
+  // reservation
     public function reservation(Request $request)
     {
       // dd($request);
@@ -142,10 +142,13 @@ class AdminController extends Controller
 
     return redirect()->back()->with('status', 'Your reservation added successfully');
     }
-  //View reservation
+    //View reservation
     public function show_reservation()
     {
         $reservation = Reservation::all();
         return view('admin.adminreservation', compact('reservation'));
     }
-}
+  // Chef
+
+
+  }
